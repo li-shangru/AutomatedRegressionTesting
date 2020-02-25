@@ -13,7 +13,7 @@ num_files = 10
 # Number of lines in each generated file
 num_lines = 100
 
-# Path where files should be generated, relative to current file
+# Path where test files should be generated, relative to current file
 tests_path = "tests/"
 
 # List of all possible game difficulty level
