@@ -14,7 +14,7 @@ import Generate_Tests_Parameters as par
 __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
 __credits__ = "Shangru Li"
-__license__ = "WTFPL"
+__license__ = "MIT"
 __version__ = "0.1"
 __maintainer__ = "Shangru Li"
 __email__ = "maxsli@protonmail.com"
