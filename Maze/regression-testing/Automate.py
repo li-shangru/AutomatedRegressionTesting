@@ -3,9 +3,11 @@
 
 """
 Automated the proccess of regression testing
-Generate test files and run regression test on these tests.
+Generate test files and run regression testing on these tests.
 """
 
+import sys
+sys.path.insert(1, './src')
 import ETF_Test
 import Generate_Tests
 

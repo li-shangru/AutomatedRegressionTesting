@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-import ETF_Test_Parameters as par
 import os
 import sys
 from filecmp import cmp
 from shutil import copyfile, rmtree
 from itertools import zip_longest
 from fnmatch import fnmatch
+sys.path.insert(1, '../')
+import Parameters as par
 
 def expected(file, from_path, to_path):
 	""" 

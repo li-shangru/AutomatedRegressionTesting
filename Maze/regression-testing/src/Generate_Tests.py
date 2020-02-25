@@ -4,36 +4,38 @@
 """
 EECS3311 Software Design Winter 2020
 Maze project random test generator
-Generate `num_files` under `file_path` with `num_lines` of commands
+Generate `num_files` under `tests_path` with `num_lines` of commands
 """
 
 import random
 import os
-import Generate_Tests_Parameters as par
+import sys
+sys.path.insert(1, '../')
+import Parameters as par
 
 __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
 __credits__ = "Shangru Li"
 __license__ = "MIT"
-__version__ = "0.1"
+__version__ = "0.2"
 __maintainer__ = "Shangru Li"
 __email__ = "maxsli@protonmail.com"
-__status__ = "Untested Prerelease Alpha Testing Very Unstable"
+__status__ = "Untested Prerelease Alpha Testing Unstable"
 
 def main():
 	for i in range(par.num_files):
-		# Create `file_path` if not exists
-		if not os.path.exists(par.file_path):
+		# Create `tests_path` if not exists
+		if not os.path.exists(par.tests_path):
 			try:
-				os.mkdir(par.file_path)
+				os.mkdir(par.tests_path)
 			except OSError:
-				print ("Creation of the directory %s failed" % par.file_path)
+				print ("Creation of the directory %s failed" % par.tests_path)
 		# Open the file `at(i+1).txt` and overwrite its content
 		# `open([path_to_file], [mode])`.
 		# mode: "a" - Append - will append to the end of the file
 		# mode: "w" - Write - will overwrite any existing content
 		try:
-			file = open(par.file_path + "at" + str(i+1) + ".txt", "w+")
+			file = open(par.tests_path + "at" + str(i+1) + ".txt", "w+")
 			for j in range(par.num_lines):
 				# Generate a random integer in range 1-8, included
 				seed = random.randint(1, 8)
@@ -59,11 +61,11 @@ def main():
 			# Close file after finish writing
 			try:
 				file.close
-				print ("Generated test file: " + par.file_path + "at" + str(i+1) + ".txt.")
+				print ("Generated test file: " + par.tests_path + "at" + str(i+1) + ".txt.")
 			except OSError:
-				print ("Close file %s failed" % par.file_path + "at" + str(i+1) + ".txt")
+				print ("Close file %s failed" % par.tests_path + "at" + str(i+1) + ".txt")
 		except OSError:
-			print ("Open file %s failed" % par.file_path + "at" + str(i+1) + ".txt")
+			print ("Open file %s failed" % par.tests_path + "at" + str(i+1) + ".txt")
 	print ("================================================")
 	print ("Successfully generated " + str(par.num_files) + " test files.")
 	print ("================================================")
