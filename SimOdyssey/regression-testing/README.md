@@ -1,7 +1,7 @@
 # Introduction
 
 This software includes a pure random test generation tool to generate input test
-cases for EECS3311 Maze project.
+cases for EECS3311 SimOdyssey project.
 
 Combined with the ETF regression testing suite, to achieve fully automated testing.
 
@@ -9,11 +9,11 @@ Combined with the ETF regression testing suite, to achieve fully automated testi
 
 1. Place the `oracle.exe` under the current directory.
 
-2. Place the finalized version of your project (located at `EIFGENs/maze/F_code/maze`) under the current directory.
+2. Place the finalized version of your project (located at `EIFGENs/simodyssey/F_code/maze`) under the current directory.
 
-3. Rename `maze` to `maze.exe`.
+3. Rename `simodyssey` to `simodyssey.exe`.
 
-4. Make sure `maze.exe` has executable mode, if not, run `chmod 700 maze.exe`.
+4. Make sure `simodyssey.exe` has executable mode, if not, run `chmod 700 simodyssey.exe`.
 
 5. Execute the automated testing script by running `./Automate.py` from command line.
 
