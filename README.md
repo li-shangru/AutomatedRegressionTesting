@@ -5,6 +5,7 @@
 * [[Analyzer]](/Analyzer)
 * [[Battleship]](/Battleship)
 * [[Maze]](/Maze)
+* [[SimOdyssey]](/SimOdyssey)
 
 ## Getting Started
 
