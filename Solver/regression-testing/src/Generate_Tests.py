@@ -17,7 +17,7 @@ __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
 __credits__ = "Shangru Li"
 __license__ = "MIT"
-__version__ = "0.2"
+__version__ = "0.3"
 __maintainer__ = "Shangru Li"
 __email__ = "maxsli@protonmail.com"
 __status__ = "Untested Prerelease Alpha Testing Unstable"
@@ -90,7 +90,7 @@ def generate_expression(recursive_depth):
 	"""
 	Generate a random expression recursively
 	"""
-	seed = random.randint(1, 10)
+	seed = random.randint(1, 12)
 	# Base case: return a random variable, could be undeclared
 	if seed == 1 and recursive_depth < 5:
 		return "not " + generate_expression(recursive_depth+1)
@@ -104,6 +104,10 @@ def generate_expression(recursive_depth):
 		return generate_expression(recursive_depth+1) + " <=> " + generate_expression(recursive_depth+1)
 	elif seed == 6 and recursive_depth < 5:
 		return "(" + generate_expression(recursive_depth+1) + ")"
+	elif seed == 7:
+		return "true"
+	elif seed == 8:
+		return "false"
 	else:
 		return decleared[random.randint(0, (len(decleared)-1))]
 
