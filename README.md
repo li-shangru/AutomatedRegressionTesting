@@ -1,4 +1,4 @@
-# Automated testing suites for EECS3311 Projects
+# Automated testing suites for EECS3311 and EECS4302 Projects
 
 ## List of Projects
 
@@ -6,6 +6,7 @@
 * [[Battleship]](/Battleship)
 * [[Maze]](/Maze)
 * [[SimOdyssey]](/SimOdyssey)
+* [[Solver]](/Solver)
 
 ## Getting Started
 
