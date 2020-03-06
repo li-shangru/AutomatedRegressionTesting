@@ -12,6 +12,7 @@ import os
 import sys
 sys.path.insert(1, '../')
 import Parameters as par
+import importlib
 
 __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
@@ -27,6 +28,7 @@ decleared = []
 
 def main():
 	for i in range(par.num_files):
+		initialize_variables()
 		# Create `tests_path` if not exists
 		if not os.path.exists(par.tests_path):
 			try:
@@ -110,6 +112,13 @@ def generate_expression(recursive_depth):
 		return "false"
 	else:
 		return decleared[random.randint(0, (len(decleared)-1))]
+
+def initialize_variables():
+	importlib.reload(par)
+	global variables
+	global decleared
+	variables = par.variables
+	decleared = []
 
 if __name__ == "__main__":
 	main()
