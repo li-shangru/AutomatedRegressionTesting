@@ -18,7 +18,7 @@ __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
 __credits__ = "Shangru Li"
 __license__ = "MIT"
-__version__ = "0.3"
+__version__ = "0.4"
 __maintainer__ = "Shangru Li"
 __email__ = "maxsli@protonmail.com"
 __status__ = "Untested Prerelease Alpha Testing Unstable"
@@ -42,16 +42,10 @@ def main():
 		try:
 			file = open(par.tests_path + "at" + str(i+1) + ".txt", "w+")
 			for j in range(par.num_lines):
-				# Generate a random integer in range 1-14, included
-				seed = random.randint(1, 2)
-				# Generate commands accroading to the `seed`
-				# Modify `if seed == INTEGER` accordingly
-				if seed == 1 and len(variables) > 0:
+				if len(variables) > 0:
 					file.write(variable_declearation())
-				elif seed == 2 and len(decleared) > 0:
+				elif len(decleared) == 0:
 					file.write(verify())
-				else:
-					j = j - 1
 				# Write a new line to end of each line if it's not the last
 				if j != (par.num_lines - 1):
 					file.write('\n')
