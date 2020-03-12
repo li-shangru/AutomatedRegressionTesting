@@ -17,7 +17,7 @@ __author__ = "Shangru Li"
 __copyright__ = "Copyright 2020, Shangru Li"
 __credits__ = "Shangru Li"
 __license__ = "MIT"
-__version__ = "0.1"
+__version__ = "0.2"
 __maintainer__ = "Shangru Li"
 __email__ = "maxsli@protonmail.com"
 __status__ = "Untested Prerelease Alpha Testing Unstable"
@@ -37,8 +37,8 @@ def main():
 		try:
 			file = open(par.tests_path + "at" + str(i+1) + ".txt", "w+")
 			for j in range(par.num_lines):
-				# Generate a random integer in range 1-14, included
-				seed = random.randint(1, 14)
+				# Generate a random integer in range 1-13, included
+				seed = random.randint(1, 13)
 				# Generate commands accroading to the `seed`
 				# Modify `if seed == INTEGER` accordingly
 				if seed == 1:
@@ -54,12 +54,10 @@ def main():
 				elif seed == 6:
 					file.write("wormhole")
 				elif seed == 7:
-					file.write("toggle_RNG_out")
-				elif seed == 8:
 					file.write("status")
-				elif seed == 9:
+				elif seed == 8:
 					file.write(test())
-				elif seed == 10 or seed == 11 or seed == 12 or seed == 13 or seed == 14:
+				elif seed == 9 or seed == 10 or seed == 11 or seed == 12 or seed == 13:
 					# Move the player character to a direction.
 					file.write(move())
 				else:

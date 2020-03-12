@@ -23,7 +23,7 @@ Combined with the ETF regression testing suite, to achieve fully automated testi
 
 * [`Generate_Tests.py`](./src/Generate_Tests.py) will generate random acceptance tests file specially for Maze project.
 
-* [`ETF_Test.py`](./src/ETF_Test.py) will run the generated acceptance tests on `oracle.exe` and `maze.exe`, then compare the output.
+* [`ETF_Test.py`](./src/ETF_Test.py) will run the generated acceptance tests on `oracle.exe` and `simodyssey.exe`, then compare the output.
 
 * [`Parameters.py`](./Parameters.py) contains the parameters for the two scripts above.
 
