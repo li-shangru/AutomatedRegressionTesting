@@ -1,4 +1,15 @@
-# Automated testing suites for EECS3311 and EECS4302 Projects
+# Automated Regression Testing
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/MaxsLi/AutomatedRegressionTesting)
+![GitHub all releases](https://img.shields.io/github/downloads/MaxsLi/AutomatedRegressionTesting/total)
+![GitHub](https://img.shields.io/github/license/MaxsLi/AutomatedRegressionTesting)
+
+## Introduction
+
+This repository contains various automated testing suites for EECS3311 and EECS4302 Lab/Projects.
+
+All testing suites are written in Python3.
 
 ## List of Projects
 
