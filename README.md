@@ -1,9 +1,9 @@
 # Automated Regression Testing
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/MaxsLi/AutomatedRegressionTesting)
-![GitHub all releases](https://img.shields.io/github/downloads/MaxsLi/AutomatedRegressionTesting/total)
-![GitHub](https://img.shields.io/github/license/MaxsLi/AutomatedRegressionTesting)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/li-shangru/AutomatedRegressionTesting)
+![GitHub all releases](https://img.shields.io/github/downloads/li-shangru/AutomatedRegressionTesting/total)
+![GitHub](https://img.shields.io/github/license/li-shangru/AutomatedRegressionTesting)
 
 ## Introduction
 
@@ -23,4 +23,4 @@ All testing suites are written in Python3.
 
 ## Getting Started
 
-To use the test suite, go to [releases](https://github.com/MaxsLi/EECS3311AutomatedTesting/releases).
+To use the test suite, go to [releases](https://github.com/li-shangru/EECS3311AutomatedTesting/releases).
